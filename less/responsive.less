@@ -1,0 +1,58 @@
+@base: 14px;
+@sm-multiplier: 1.25;
+@md-multiplier: 1.25 * @sm-multiplier;
+@lg-multiplier: @md-multiplier;
+
+@sm-size: @base * @sm-multiplier;
+@md-size: @base * @md-multiplier;
+@lg-size: @base * @lg-multiplier;
+
+.heading-size (@heading-base) {
+	h1 {
+		font-size: floor((@heading-base * 2.6));
+	}
+
+	h2 {
+		font-size: floor((@heading-base * 2.15));
+	}
+
+	h3 {
+		font-size: floor((@heading-base * 1.7));
+	}
+
+	h4 {
+		font-size: floor((@heading-base * 1.25));
+	}
+
+	h5 {
+		font-size: @heading-base;
+	}
+
+	h6 {
+		font-size: floor((@heading-base * 0.85));
+	}
+}
+
+@media (min-width: @screen-sm) {
+    body {
+    	font-size: @sm-size;
+    }
+
+    .heading-size(@sm-size);
+}
+
+@media (min-width: @screen-md) {
+    body {
+    	font-size: @md-size;
+    }
+
+    .heading-size(@md-size);
+}
+
+@media (min-width: @screen-lg) {
+    body {
+    	font-size: @lg-size;
+    }
+
+    .heading-size(@lg-size);
+}

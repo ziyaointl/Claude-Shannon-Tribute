@@ -1,3 +1,8 @@
+body {
+	background: url(../img/background.png) no-repeat center center fixed;
+	.background-size(cover);
+}
+
 h3 {
 	font-weight: 200;
 }
@@ -23,22 +28,34 @@ p {
 }
 
 .main-page {
-	.make-xs-column(10);
-	.col-centered;
+	background-color: white;
 
-	margin-top: 13em;
-	padding-top: 4em;
+	position: relative;
+	top: 200px;
+	padding-top: 150px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media (min-width: @screen-sm) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media (min-width: @screen-md) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }
 
 .portrait {
-	.make-xs-column(6);
-	.make-lg-column(2);
-
+	z-index: 5;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 
-	margin-top: 3em;
+	width: 200px;
+	margin-top: 50px;
 }
