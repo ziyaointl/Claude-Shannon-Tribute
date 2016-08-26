@@ -6772,9 +6772,6 @@ h3 {
 h4 {
   font-weight: 200;
 }
-p {
-  text-align: justify;
-}
 .italic {
   font-style: italic;
 }
@@ -6832,35 +6829,81 @@ p {
 .footer a {
   color: #9F9F9F;
 }
-@media (min-width: 768px) {
+@media (max-width: 480px) {
   body {
-    font-size: 17.5px;
+    font-size: 16px;
   }
   h1 {
-    font-size: 45px;
+    font-size: 41px;
   }
   h2 {
-    font-size: 37px;
+    font-size: 34px;
   }
   h3 {
-    font-size: 29px;
+    font-size: 27px;
   }
   h4 {
-    font-size: 21px;
+    font-size: 20px;
   }
   h5 {
-    font-size: 17.5px;
+    font-size: 16px;
   }
   h6 {
-    font-size: 14px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 41px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 43px;
+  }
+  h3 {
+    font-size: 34px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 17px;
   }
 }
 @media (min-width: 992px) {
   body {
-    font-size: 21.875px;
+    font-size: 22px;
   }
   h1 {
-    font-size: 56px;
+    font-size: 57px;
   }
   h2 {
     font-size: 47px;
@@ -6872,7 +6915,7 @@ p {
     font-size: 27px;
   }
   h5 {
-    font-size: 21.875px;
+    font-size: 22px;
   }
   h6 {
     font-size: 18px;
@@ -6880,10 +6923,10 @@ p {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 21.875px;
+    font-size: 22px;
   }
   h1 {
-    font-size: 56px;
+    font-size: 57px;
   }
   h2 {
     font-size: 47px;
@@ -6895,7 +6938,7 @@ p {
     font-size: 27px;
   }
   h5 {
-    font-size: 21.875px;
+    font-size: 22px;
   }
   h6 {
     font-size: 18px;
