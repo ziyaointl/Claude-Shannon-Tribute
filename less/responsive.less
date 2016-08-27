@@ -1,74 +1,63 @@
 @base: 16px;
-@sm-multiplier: 1.25;
+@xs-multiplier: 1.1;
+@sm-multiplier: 1.1 * @xs-multiplier;
 @md-multiplier: 1.1 * @sm-multiplier;
 @lg-multiplier: @md-multiplier;
-
+@xs-size: @base * @xs-multiplier;
 @sm-size: @base * @sm-multiplier;
 @md-size: @base * @md-multiplier;
 @lg-size: @base * @lg-multiplier;
 
-.heading-size (@heading-base) {
-	h1 {
-		font-size: floor((@heading-base * 2.6));
-	}
-
-	h2 {
-		font-size: floor((@heading-base * 2.15));
-	}
-
-	h3 {
-		font-size: floor((@heading-base * 1.7));
-	}
-
-	h4 {
-		font-size: floor((@heading-base * 1.25));
-	}
-
-	h5 {
-		font-size: @heading-base;
-	}
-
-	h6 {
-		font-size: floor((@heading-base * 0.85));
-	}
-}
-
 @media (max-width: @screen-xs) {
-	body {
-		font-size: @base;
-	}
-
-	.heading-size(@base);
+    body {
+        font-size: @base;
+    }
 }
 
 @media (min-width: @screen-xs) {
-	body {
-		font-size: @base;
-	}
-
-	.heading-size(@base);
+    body {
+        font-size: @xs-size;
+    }
 }
 
 @media (min-width: @screen-sm) {
     body {
-    	font-size: @sm-size;
+        font-size: @sm-size;
     }
-
-    .heading-size(@sm-size);
 }
 
 @media (min-width: @screen-md) {
     body {
-    	font-size: @md-size;
+        font-size: @md-size;
     }
-
-    .heading-size(@md-size);
 }
 
 @media (min-width: @screen-lg) {
     body {
-    	font-size: @lg-size;
+        font-size: @lg-size;
     }
+}
 
-    .heading-size(@lg-size);
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .67em;
 }
